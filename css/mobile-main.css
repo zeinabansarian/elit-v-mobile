@@ -1,0 +1,473 @@
+.swiper-button-prev::after {
+  content: none !important;
+}
+
+.swiper-button-next::after {
+  content: none !important;
+}
+
+@font-face {
+  font-family: "IRANSANSfa";
+  font-style: normal;
+  src: url("../fonts/IRANSANS/IRANSANSfa.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../fonts/IRANSANS/IRANSANSfa.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSANS/IRANSANSfa.woff2") format("woff2"), url("../fonts/IRANSANS/IRANSANSfa.woff") format("woff"), url("../fonts/IRANSANS/IRANSANSfa.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IRANSANS";
+  font-style: normal;
+  src: url("../fonts/IRANSANS/IRANSansWeb.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../fonts/IRANSANS/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSANS/IRANSansWeb.woff2") format("woff2"), url("../fonts/IRANSANSfa.woff") format("woff"), url("../fonts/IRANSANS/IRANSansWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IRANSANS";
+  font-weight: 800;
+  src: url("../fonts/IranSans/eot/IRANSansWeb_Bold.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../fonts/IranSans/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSANS/woff2/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/IRANSANSfa.woff") format("woff"), url("../fonts/IranSans/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IRANSANS";
+  font-weight: 500;
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../_fonts/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../_fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../_fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IRANSANS";
+  font-weight: 400;
+  src: url("../_fonts/IRANSansFaNum-Regular.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IRANSansFaNum-Regular.eot?#iefix") format("embedded-opentype"), url("../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"), url("../_fonts/IRANSansFaNum-Regular.woff") format("woff"), url("../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IRANSANS";
+  font-weight: 300;
+  src: url("../_fonts/IRANSansFaNum-Light.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IRANSansFaNum-Light.eot?#iefix") format("embedded-opentype"), url("../_fonts/IRANSansFaNum-Light.woff2") format("woff2"), url("../_fonts/IRANSansFaNum-Light.woff") format("woff"), url("../_fonts/IRANSansFaNum-Light.ttf") format("truetype");
+}
+* {
+  font-family: "IRANSANS";
+}
+
+ul,
+li,
+p,
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-y: visible;
+  height: auto;
+  overflow-x: hidden !important;
+  margin: 0;
+  direction: rtl;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  text-decoration: unset;
+  box-shadow: unset;
+  outline: unset;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:focus:active,
+a:active:focus,
+button:hover,
+button:focus,
+button:active,
+button:focus:active,
+button:active:focus,
+input:hover,
+input:focus,
+input:active,
+input:focus:active,
+input:active:focus,
+select:hover,
+select:focus,
+select:active,
+select:focus:active,
+select:active:focus,
+textarea:hover,
+textarea:focus,
+textarea:active,
+textarea:focus:active,
+textarea:active:focus {
+  text-decoration: unset;
+  box-shadow: unset;
+  outline: unset;
+}
+
+.faNam {
+  font-family: "IRANSANSfa";
+}
+
+* {
+  font-family: IRANSANS;
+}
+
+p {
+  direction: rtl;
+}
+
+.popUpGalleryContainer {
+  position: fixed;
+  top: 0;
+  background-color: #1d2f3b;
+  width: 100svw;
+  overflow-y: auto;
+  height: 100%;
+  z-index: 100055202542;
+  transform: translateY(-100%);
+  transition: 1s ease;
+}
+.popUpGalleryContainer .fThumb {
+  padding: 131px 30px 0;
+}
+.popUpGalleryContainer .fThumb .closePop {
+  position: fixed;
+  top: 50px;
+  z-index: 10;
+}
+.popUpGalleryContainer .fThumb .thumbBox {
+  margin-bottom: 35px;
+}
+.popUpGalleryContainer .fThumb img {
+  width: 100%;
+}
+.popUpGalleryContainer .sGallery {
+  position: fixed;
+  transform: translateY(-100%);
+  top: 0;
+  background-color: #1d2f3b;
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease;
+}
+.popUpGalleryContainer .sGallery .closeSlider {
+  position: fixed;
+  top: 50px;
+  right: 38px;
+}
+.popUpGalleryContainer .sGallery .toolbarPop {
+  display: flex;
+  margin-top: 27px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  align-items: center;
+}
+.popUpGalleryContainer .sGallery .popSlider {
+  width: 100svw;
+}
+.popUpGalleryContainer .sGallery .popSlider .imgS {
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.popUpGalleryContainer .sGallery .popSlider .imgS img {
+  width: 100%;
+}
+
+.popOpen {
+  transform: translateY(0) !important;
+}
+
+.aboutUs {
+  padding-top: 103px;
+}
+.aboutUs .section1 {
+  position: relative;
+}
+.aboutUs .section1 .rSide .back {
+  width: 100svw;
+  height: 415.41px;
+}
+.aboutUs .section1 .rSide .title {
+  display: flex;
+}
+
+.pause {
+  opacity: 1;
+}
+
+.play {
+  opacity: 0;
+  display: none;
+}
+
+.gallery {
+  background-color: #f9f2ea;
+  overflow-x: hidden;
+  padding-bottom: 75px;
+}
+.gallery .section1 {
+  padding-top: 169px;
+}
+.gallery .section1 .sec1Para {
+  padding: 0 38px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.gallery .section1 .sec1Para p {
+  font-family: IRANSANS;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.3px;
+  text-align: center;
+}
+.gallery .section1 .scrollContainer {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.gallery .section1 .scrollContainer img {
+  width: 100%;
+}
+.gallery .section1 .scrollContainer .topS {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.gallery .section1 .scrollContainer .btmS {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.gallery .section2 {
+  background-color: white;
+}
+.gallery .section2 .lSide {
+  padding: 65px 20px 90px;
+}
+.gallery .section2 .lSide h1 {
+  color: #1d2f3b;
+  font-family: IRANSANS;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.17px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.gallery .section2 .lSide .para p,
+.gallery .section2 .lSide .para summary {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: right;
+}
+.gallery .section2 .lSide .readmore {
+  cursor: text;
+  position: relative;
+}
+.gallery .section2 .lSide .readmore summary {
+  display: -webkit-box;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.gallery .section2 .lSide .readmore summary:after {
+  bottom: -40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  pointer-events: initial;
+  color: rgba(29, 47, 59, 0.5019607843);
+}
+.gallery .section2 .lSide .readmore:not([open]) summary:after {
+  content: attr(data-more);
+}
+.gallery .section2 .lSide .readmore[open] summary {
+  -webkit-line-clamp: unset;
+}
+.gallery .section2 .lSide .readmore[open] summary:after {
+  content: attr(data-less);
+}
+.gallery .section2 .rSide .imgS {
+  display: flex;
+  align-items: center;
+}
+.gallery .section2 .rSide img {
+  width: 100%;
+}
+.gallery .section3 {
+  margin: 40px 0;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+}
+.gallery .section3 .scaleContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .section3 img {
+  width: 100%;
+  filter: brightness(0.45);
+}
+.gallery .section3 .overlayItems {
+  position: absolute;
+}
+.gallery .section3 .overlayItems .galleryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 36px;
+  border: 1px solid white;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.gallery .section3 .overlayItems .galleryBtn .gallerySq {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+.gallery .section3 .overlayItems .galleryBtn p {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21.91px;
+  text-align: center;
+  color: white;
+}
+.gallery .section4 .lSide {
+  background-color: #1d2f3b;
+  padding: 65px 20px 57px;
+}
+.gallery .section4 .lSide h2 {
+  font-family: IRANSANS;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.17px;
+  text-align: right;
+  color: white;
+  margin-bottom: 20px;
+}
+.gallery .section4 .lSide .readmore {
+  cursor: text;
+  position: relative;
+}
+.gallery .section4 .lSide .readmore summary {
+  display: -webkit-box;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.gallery .section4 .lSide .readmore summary:after {
+  bottom: -40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  pointer-events: initial;
+  color: rgba(29, 47, 59, 0.5019607843);
+}
+.gallery .section4 .lSide .readmore:not([open]) summary:after {
+  content: attr(data-more);
+}
+.gallery .section4 .lSide .readmore[open] summary {
+  -webkit-line-clamp: unset;
+}
+.gallery .section4 .lSide .readmore[open] summary:after {
+  content: attr(data-less);
+}
+.gallery .section4 .lSide .para p,
+.gallery .section4 .lSide .para summary {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  text-align: right;
+}
+.gallery .section4 .inVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gallery .section4 .inVideo .playbtn {
+  position: absolute;
+}
+.gallery .section5 h3 {
+  color: #1d2f3b;
+  font-family: IRANSANS;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.3px;
+  text-align: right;
+  margin: 42px 20px;
+}
+.gallery .section5 .servSlider {
+  direction: ltr;
+  padding: 0 20px;
+}
+.gallery .section5 .servSlider .swiper-slide {
+  background-color: #1d2f3b;
+}
+.gallery .section5 .servSlider .swiper-slide .serBox {
+  padding: 42px 24px;
+  direction: rtl;
+}
+.gallery .section5 .servSlider .swiper-slide .serBox .title span {
+  font-family: IRANSANS;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 39.13px;
+  text-align: right;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 6px;
+  width: 100%;
+  display: block;
+  padding-bottom: 5px;
+}
+.gallery .section5 .servSlider .swiper-slide .serBox .title h4 {
+  font-family: IRANSANS;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 39.13px;
+  text-align: right;
+  color: white;
+}
+.gallery .section5 .servSlider .swiper-slide .serBox .para {
+  margin-top: 79px;
+}
+.gallery .section5 .servSlider .swiper-slide .serBox .para p {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  text-align: right;
+}/*# sourceMappingURL=mobile-main.css.map */
