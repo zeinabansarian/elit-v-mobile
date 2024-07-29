@@ -475,4 +475,29 @@
   font-weight: 400;
   line-height: 24px;
   text-align: right;
+}
+.aboutUs .section5 {
+  background-color: #1d2f3b;
+  padding: 61px 20px;
+  text-align: center;
+  margin-bottom: 76px;
+}
+.aboutUs .section5 span {
+  font-family: IRANSANS;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34.43px;
+  text-align: center;
+  color: white;
+}
+.aboutUs .section5 .para {
+  margin-top: 40px;
+}
+.aboutUs .section5 .para p {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.91px;
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=mobile-m-style.css.map */

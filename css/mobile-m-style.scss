@@ -504,4 +504,29 @@ $color_main: #1d2f3b;
       }
     }
   }
+  .section5 {
+    background-color: $color_main;
+    padding: 61px 20px;
+    text-align: center;
+    margin-bottom: 76px;
+    span {
+      font-family: IRANSANS;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 34.43px;
+      text-align: center;
+      color: white;
+    }
+    .para {
+      margin-top: 40px;
+      p {
+        font-family: IRANSANS;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.91px;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
 }
