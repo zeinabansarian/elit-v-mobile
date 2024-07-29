@@ -564,4 +564,76 @@ $color_main: #1d2f3b;
       }
     }
   }
+  .section7{
+    padding: 0 20px 60px 20px;
+    .title {
+      display: flex;
+      align-items: baseline;
+      column-gap: 5px;
+      margin-bottom: 20px;
+      h3 {
+        font-family: IRANSANS;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 34.43px;
+        text-align: right;
+        color: $color_main;
+      }
+    }
+    .collSec{
+      .collGrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 24px;
+        row-gap: 14px;
+        .collBox{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+          .imgS{
+            display: flex;
+            align-items: center;
+            position: relative;
+          }
+          .imgS::after{
+            content: '';
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(0deg, rgba(29, 47, 59, 0.5), rgba(29, 47, 59, 0.5));
+            transition: 0.5s ease;
+            opacity: 0;
+          }
+          .collName{
+            span{
+              font-family: IRANSANS;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 18.78px;
+              text-align: right;
+              color: $color_main;
+            }
+            p{
+              font-family: IRANSANS;
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 15.65px;
+              text-align: right;
+              margin-top: 3px;
+              color: $color_main;
+            }
+          }
+        }
+        .collBox:hover{
+          .imgS::after{
+
+            opacity: 1!important;
+          }
+
+        }
+      }
+    }
+  }
 }
