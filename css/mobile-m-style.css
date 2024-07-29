@@ -500,4 +500,38 @@
   line-height: 21.91px;
   text-align: center;
   color: white;
+}
+.aboutUs .section6 {
+  padding: 0 20px;
+}
+.aboutUs .section6 .rSide {
+  margin-bottom: 28px;
+}
+.aboutUs .section6 .rSide img {
+  width: 100%;
+}
+.aboutUs .section6 .lSide {
+  margin-bottom: 35px;
+}
+.aboutUs .section6 .lSide .title {
+  display: flex;
+  align-items: baseline;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-bottom: 12px;
+}
+.aboutUs .section6 .lSide .title h3 {
+  font-family: IRANSANS;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34.43px;
+  text-align: right;
+  color: #1d2f3b;
+}
+.aboutUs .section6 .lSide .para p {
+  font-family: IRANSANS;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
 }/*# sourceMappingURL=mobile-m-style.css.map */
