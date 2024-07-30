@@ -166,7 +166,7 @@ header.MobileHeader{
          color: $color_main !important; 
         }
         svg ,path{
-            fill: $color_main;
+            fill: $color_main !important;
         }
         .toggleBox{
             width: 50px;
