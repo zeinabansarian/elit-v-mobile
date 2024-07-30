@@ -27,32 +27,6 @@ CloseMenu.addEventListener('click',()=>{
 
 
 })
-// Images on hover
-let MenuItems = document.querySelectorAll('.BG_MenuC .Menu .Menu-link')
-let Banner = document.querySelector('.BG img')
-MenuItems.forEach(item=>{
-    item.addEventListener('mouseenter',(event)=>{
-        for(let i =0 ; i< MenuItems.length ; i++){
-            MenuItems[i].classList.remove('show')
-          let img = item.getAttribute('data-bg')
-          Banner.setAttribute('src',img)
-            Banner.parentElement.classList.add('showIMG')   
-         
-        }
-        event.currentTarget.classList.toggle('show')
-        })
-        item.addEventListener('mouseleave',(event)=>{
-            for(let i =0 ; i< MenuItems.length ; i++){
-                MenuItems[i].classList.remove('show')
-              let img = item.getAttribute('data-bg')
-              Banner.parentElement.classList.remove('showIMG')
-            }
-            event.currentTarget.classList.toggle('show')
-     })
-
-})
-
-
 // SEARCH
 let searchBTN = document.querySelector('.searchIcon')
 let closeSearch = document.querySelector('.CloseSerch')
