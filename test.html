@@ -1,11 +1,235 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2358650"> 
+  <member name="about" type="view"/>
+  
+  <member name="about250" type="view" postsql="select * from [db.about250] where TypeID=250"/>
+  
+   </basis>	
+  <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2358650"> <member name="aboutGallery" type="list" format="4"/> </basis>
+  <basis core="dbsource" name="db" source="basiscore" lid="1" mid="11" catid="209410"> <member name="ceo" type="list" typeid="159" propertyid="2739"/> </basis>	
+  <basis core="dbsource" name="db" source="basiscore" lid="1" mid="11" catid="209358"> <member name="team" type="list" size="163x227"/> </basis>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>[##cms.seo.title##]</title>
+  <meta name="description" content="[##cms.seo.description##]" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-main.css" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-m-style.css" />
 </head>
+
 <body>
+  <div class="aboutUs">
+    <div class="section1">
+      <div class="back"></div>
+      <div class="rSide">
+        <div class="overPara">
+          <div class="title">
+            <svg width="18" height="23" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95" />
+              <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95" />
+              <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95" />
+            </svg>
+            <basis core="print" datamembername="db.about">
+                <face filter="TypeID=150">
+                    
+                  <h1>@Answer</h1>
+                </face>
+            </basis>
+          </div>
+          <div class="para">
+            <basis core="print" datamembername="db.about">
+              <face filter="TypeID=129">
+           @largetext
+
+              </face>
+            </basis>
+          </div>
+        </div>
+      </div>
+      <div class="lSide">
+        <div class="imgS">
+          <basis core="print" datamembername="db.aboutGallery">
+              <face filter="ord=51"> 
+                <img src="/@largeIMG" alt="@name" title="@name" />
+                  
+              </face>
+          </basis>
+        </div>
+      </div>
+    </div>
+    <nav class="aboutNav">
+      <ul>
+        <basis core="print" datamembername="db.about250">
+
+            <face>
+                
+              <li>
+                <span> @text   </span>
+              </li>
+            </face>
+        </basis>
+      
+        <li>
+          <span> بیوگرافی مدیر عامل </span>
+        </li>
+        <li>
+          <span> معرفی همکاران </span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="section2 scroll-1">
+      <div class="back"></div>
+      <div class="lSide">
+        <div class="overPara">
+          <basis core="print" datamembername="db.about250">
+              <face filter="RowNumber=1">
+                  
+                <div class="title">
+                  <svg width="18" height="23" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95" />
+                    <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95" />
+                    <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95" />
+                  </svg>
+                  <h1>@text  </h1>
+                </div>
+                <div class="para">
+                  @largetext
+                </div>
+              </face>
+          </basis>
+        </div>
+      </div>
+      <div class="rSide">
+        <div class="imgS">
+          <basis core="print" datamembername="db.aboutGallery">
+              <face filter="ord=52"> 
+                <img src="/@largeIMG" alt="@name" title="@name" />
+                  
+              </face>
+          </basis>
+        </div>
+      </div>
+   
+    </div>
+    <div class="section3">
+      <div class="para">
+        <basis core="print" datamembername="db.about">
+            <face filter="TypeID=128">
+                
+              <p>
+                “        
+@Answer
+                ”
+              </p>
+            </face>
+        </basis>
+      </div>
+    </div>
+    <div class="section4 scroll-2">
+      <div class="back"></div>
+      <basis core="print" datamembername="db.about250">
+          <face filter="RowNumber=2">
+              
+            <div class="rSec">
+              <div class="title">
+                <svg width="18" height="23" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95" />
+                  <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95" />
+                  <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95" />
+                </svg>
+                <h2>@text </h2>
+              </div>
+              <div class="para">
+               @largetext
+              </div>
+            </div>
+          </face>
+      </basis>
     
+    </div>
+
+    <div class="section5 scroll-3">
+      <basis core="print" datamembername="db.about250">
+          <face filter="RowNumber=3">
+            <span>  @text </span>
+            <div class="para">
+              <p> @largetext </p>
+            </div>
+              
+          </face>
+      </basis>
+    </div>
+    <div class="section6 scroll-4">
+      <div class="rSide">
+        <div class="imgS">
+          <basis core="print" datamembername="db.ceo">
+              <face>
+                  
+                <img src="/@type_159" alt="@title" title="@title" />
+              </face>
+          </basis>
+        </div>
+      </div>
+      <div class="lSide">
+        <div class="title">
+          <svg width="18" height="23" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95" />
+            <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95" />
+            <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95" />
+          </svg>
+          <h3>بیوگرافی مدیر عامل </h3>
+        </div>
+        <div class="para">
+          <basis core="print" datamembername="db.ceo">
+              <face>
+                <p>
+                @prp_2739
+                </p>
+              </face>
+          </basis>
+        </div>
+      </div>
+    </div>
+    <basis core="print" datamembername="db.team">
+        <layout>
+          <div class="section7 scroll-5">
+            <div class="title">
+              <svg width="18" height="23" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95" />
+                <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95" />
+                <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95" />
+              </svg>
+              <h3>معرفی همکاران </h3>
+            </div>
+            <div class="collSec">
+              <div class="collGrid">
+               
+              @child
+              </div>
+            </div>
+          </div>
+          
+        </layout>
+        <face>
+             <div class="collBox">
+                  <div class="imgS">
+                    <img src="/@00163X00227prp" alt="@name" title="@name" />
+                  </div>
+                  <div class="collName">
+                    <span> @title</span>
+                    <!-- <p>مدیر داخلی</p> -->
+                  </div>
+                </div>
+        </face>
+    </basis>
+  </div>
+
+<basis core="call" file="mobile-script.inc" />
+
+  <script src="[##cms.cms.cdn##]/js/aboutUs-mobile.js"></script>
 </body>
+
 </html>

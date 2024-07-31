@@ -322,6 +322,16 @@ $color_main: #1d2f3b;
         width: 100%;
       }
     }
+    .para{
+      p{
+        font-family: IRANSANS;
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+text-align: right;
+
+      }
+    }
   }
   .aboutNav {
     margin: 15.17px 0 22px;
@@ -712,6 +722,7 @@ $color_main: #1d2f3b;
         justify-content: center;
         overflow: hidden;
         height: 100svh;
+        width: 100%;
       }
       img {
         height: 100svh;

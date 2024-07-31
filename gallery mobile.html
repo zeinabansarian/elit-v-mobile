@@ -1,37 +1,69 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2358660"> <member name="elitGallery" type="view"/ > </basis>
+
+  <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2358660"> 
+  <member name="elit-Gallery" type="list" />
+  <member name="elit-Gallery50" type="list" postsql="select * from [db.elit-Gallery50] where ord=50" />
+  
+   </basis>
+  <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2358670">
+  
+   <member name="service250" type="view" postsql="select * from [db.service250] where TypeID=250"/> 
+   <member name="service" type="view"/> 
+  </basis>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/mobile-m-style.css" />
+
+        <title>[##cms.seo.title##]</title>
+        <meta name="description" content="[##cms.seo.description##]" />
+   
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-main.css">
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/mobile-m-style.css" />
 </head>
 
 <body>
   <div class="gallery">
     <div class="section1">
       <div class="sec1Para">
-        <p>
-          “ آمیختن هنر در معماری، همانا دست یافتن به هماهنگی تمام عیار است ”
-        </p>
+        <basis core="print" datamembername="db.elitGallery">
+            <face filter="TypeID=128">
+                
+              <p>
+                “ @Answer ”
+              </p>
+            </face>
+        </basis>
       </div>
       <div class="scrollContainer">
         <div class="topS">
-          <div class="imgS">
-            <img
-              src="images/Hallway Wall Art Mockup, Adjustable Frame _ Color, Luxury Stylish High-end Interior Living Room, Customizable Photoshop PSD Template 1.jpg"
-              alt="@name" title="@name" />
-          </div>
+          <basis core="print" datamembername="db.elit-Gallery">
+              <face filter="ord=51">
+                <div class="imgS">
+                  <img
+                    src="/@largeIMG"
+                    alt="@name" title="@name" />
+                </div>
+                  
+              </face>
+          </basis>
 
         </div>
         <div class="btmS">
-          <div class="imgS">
-            <img
-              src="images/Hallway Wall Art Mockup, Adjustable Frame _ Color, Luxury Stylish High-end Interior Living Room, Customizable Photoshop PSD Template 1.jpg"
-              alt="@name" title="@name" />
-          </div>
+          <basis core="print" datamembername="db.elit-Gallery">
+            <face filter="ord=52">
+              <div class="imgS">
+                <img
+                  src="/@largeIMG"
+                  alt="@name" title="@name" />
+              </div>
+                
+            </face>
+        </basis>
 
         </div>
       </div>
@@ -42,30 +74,44 @@
         <div class="para">
           <details class="readmore">
             <p>
-              <summary data-more="+ نمایش بیشتر" data-less="- نمایش کمتر">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
-                تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
-                کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
-                آینده، شناخت فراوان جامعه و متخصصان را می طلبد،
-              </summary>
+              <basis core="print" datamembername="db.elitGallery">
+                  <face filter="TypeID=129">
+                    <summary data-more="+ نمایش بیشتر" data-less="- نمایش کمتر">
+                      @largetext
+                    </summary>
+                      
+                  </face>
+              </basis>
             </p>
           </details>
         </div>
       </div>
       <div class="rSide">
-        <div class="imgS">
-          <img src="images/salehhoseini---interior-livingroom-&-kitchen-4 1.jpg" alt="@name" title="@name" />
-        </div>
+        <basis core="print" datamembername="db.elit-Gallery">
+          <face filter="ord=53">
+            <div class="imgS">
+              <img
+                src="/@largeIMG"
+                alt="@name" title="@name" />
+            </div>
+              
+          </face>
+      </basis>
       </div>
     
     </div>
     <div class="section3">
       <div class="scaleContainer">
-        <div class="imgS">
-          <img src="images/16e6ffcd1e9a0bb4117a6185e7c48486.jfif" alt="@name" title="@name" />
-        </div>
+        <basis core="print" datamembername="db.elit-Gallery50">
+          <face filter="RowNumber=1">
+            <div class="imgS">
+              <img
+                src="/@largeIMG"
+                alt="@name" title="@name" />
+            </div>
+              
+          </face>
+      </basis>
         <div class="overlayItems">
           <div class="galleryBtn openGallery">
             <span class="gallerySq"></span>
@@ -78,25 +124,34 @@
     </div>
     <div class="section4">
       <div class="lSide">
-        <h2>تاریخچه</h2>
-        <div class="para">
-          <details class="readmore">
-            <p>
-              <summary data-more="+ نمایش بیشتر" data-less="- نمایش کمتر">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-                مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
-                تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
-                کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
-                آینده، شناخت فراوان جامعه و متخصصان را می طلبد،
-              </summary>
-            </p>
-          </details>
-        </div>
+        <basis core="print" datamembername="db.elitGallery">
+            <face filter="TypeID=250">
+              <h2>@text</h2>
+              <div class="para">
+                <details class="readmore">
+                  <p>
+                    <summary data-more="+ نمایش بیشتر" data-less="- نمایش کمتر">
+                      @largetext
+                    </summary>
+                  </p>
+                </details>
+              </div>
+                
+            </face>
+        </basis>
       </div>
       <div class="inVideo">
-        <video playsinline poster="images/salehhoseini---interior-livingroom-&-kitchen-4 1.jpg">
-          <source src="" />
+        <basis core="print" datamembername="db.elit-Gallery">
+            <face filter="ord=54">
+                
+              <video playsinline poster="/@largeIMG">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.elit-Gallery">
+          <face filter="format=3">
+            <source src="/@largeIMG" />
+          </face>
+      </basis>
         </video>
         <div class="playbtn">
           <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,108 +170,35 @@
       </div>
     </div>
     <div class="section5">
-      <h3>خدمات</h3>
+      <basis core="print" datamembername="db.service">
+          <face filter="TypeID=150">
+              
+            <h3>@Answer</h3>
+          </face>
+      </basis>
       <div class="sliderSection" >
         <div class="swiper servSlider" dir="ltr">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="serBox">
-                <div class="title">
-                  <span> 01 </span>
-                  <h4>طراحی</h4>
-                </div>
-                <div class="para">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                    شرایط فعلی تکنولوژی
-                  </p>
-                </div>
-              </div>
-            </div>
+
+            <basis core="print" datamembername="db.service250">
+                <face>
+                  <div class="swiper-slide">
+                    <div class="serBox">
+                      <div class="title">
+                        <span> 0@RowNumber </span>
+                        <h4>@text</h4>
+                      </div>
+                      <div class="para">
+                      @largetext
+                      </div>
+                    </div>
+                  </div>
+                    
+                </face>
+            </basis>
+      
           </div>
         </div>
       </div>
@@ -233,16 +215,18 @@
 
       </div>
       <div class="thumbContainer">
-        <div class="thumbBox">
-          <div class="imgS">
-            <img src="images/brickkiln-lane-innovation-mat-office_28-1-300x200 2.jpg" alt="@name" title="@name">
-          </div>
-        </div>
-        <div class="thumbBox">
-          <div class="imgS">
-            <img src="images/brickkiln-lane-innovation-mat-office_28-1-300x200 2.jpg" alt="@name" title="@name">
-          </div>
-        </div>
+
+        <basis core="print" datamembername="db.elit-Gallery50">
+            <face>
+                
+              <div class="thumbBox">
+                <div class="imgS">
+                  <img src="/@largeIMG" alt="@name" title="@name">
+                </div>
+              </div>
+            </face>
+        </basis>
+   
 
 
       </div>
@@ -260,12 +244,16 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-
-          <div class="swiper-slide">
-            <div class="imgS">
-              <img src="images/brickkiln-lane-innovation-mat-office_28-1-300x200 2.jpg" alt="@name" title="@name">
-            </div>
-          </div>
+<basis core="print" datamembername="db.elit-Gallery50">
+    <face>
+        
+      <div class="swiper-slide">
+        <div class="imgS">
+          <img src="/@largeIMG" alt="@name" title="@name">
+        </div>
+      </div>
+    </face>
+</basis>
 
         </div>
 
@@ -306,20 +294,15 @@
       </div>
     </div>
   </div>
-  <script src="js/jquery.2.2.2.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   
-  <script src="js/gsap.js"></script>
-  <script src="js/lenisScroll.js"></script>
-  <script src="js/scrollTrigger.js"></script>
-  <script src="js/swiper-bundle.8.4.7.min.js"></script>
-  <script src="js/playVideo.js"></script>
+<basis core="call" file="mobile-script.inc" />
+  <script src="[##cms.cms.cdn##]/js/playVideo.js"></script>
 
-  <script src="js/galleryPage-mobile.js"></script>
+  <script src="[##cms.cms.cdn##]/js/galleryPage-mobile.js"></script>
 
 
 
-  <script src="js/popUpgallery.js"></script>
+  <script src="[##cms.cms.cdn##]/js/popUpgallery.js"></script>
 </body>
 
 </html>

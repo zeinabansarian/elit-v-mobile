@@ -312,6 +312,13 @@
 .aboutUs .section1 .lSide img {
   width: 100%;
 }
+.aboutUs .section1 .para p {
+  font-family: IRANSANS;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
 .aboutUs .aboutNav {
   margin: 15.17px 0 22px;
   background-color: #ececec;
@@ -670,6 +677,7 @@
   justify-content: center;
   overflow: hidden;
   height: 100svh;
+  width: 100%;
 }
 .Home .section1 .slider1 img {
   height: 100svh;
