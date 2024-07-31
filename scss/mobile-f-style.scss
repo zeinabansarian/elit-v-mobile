@@ -485,8 +485,8 @@ $color_4:#000;
             transition: transform 0.4s ease, -webkit-transform 0.4s ease;
             text-align: right;
             font-size: 14px;
-            font-weight: 700;
-            line-height: 24px;
+            font-weight: 400;
+            line-height: 21.91px;
             color:$color_main;
         }
       
@@ -1312,9 +1312,10 @@ $color_4:#000;
 
     } 
 }
-.ProjectListC{
+.ProjectListC-mobile{
     width: 100vw;
     overflow-x: hidden;
+    padding-top: 12vh;
     .Container{
         width: 100%;
         display: flex;
@@ -1322,18 +1323,17 @@ $color_4:#000;
     }
     .BannerSlider{
         width: 100%;
-        height: 100vh;
         display: flex;
         position: relative;
     }
     .Nav{
         position: absolute;
-        right: 5vh;
+        right: 2vh;
         width: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 5vh;
+        bottom: 2vh;
         gap: 1em;
         z-index: 3;
     }
@@ -1373,13 +1373,13 @@ $color_4:#000;
     .swiper-button-prev,
     .swiper-button-next{
         position: unset;
-        width: 80px;
+        width: 40px;
         transition: all .5s ease;
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
         -ms-transition: all .5s ease;
         -o-transition: all .5s ease;
-        height: 80px;
+        height: 40px;
         background-color: transparent;
         border: 2px solid $color_1;
         display: flex;
@@ -1394,17 +1394,15 @@ $color_4:#000;
          
 } 
 svg{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
     }
     .swiper-banner{
         width: 100%;
-        height: 100%;
         display: flex;
         .swiper-wrapper{
             width: 100%;
-            height: 100%;
             .swiper-slide{
                 width: 100%;
                 display: flex;
@@ -1413,7 +1411,6 @@ svg{
                 position: relative;
                 .IMG{
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -1430,13 +1427,12 @@ svg{
                     }
                     >img{
                         width: 100%;
-                        height: 100%;
                         object-fit: cover;
                     }
                 }
                 .Title{
                     position: absolute;
-                    bottom: 5vh;
+                    bottom: 2vh;
                     left:0 ;
                     width: 100%;
                     z-index: 2;
@@ -1445,9 +1441,9 @@ svg{
                     align-items: center;
 
                     h1{
-                        font-size: 34px;
+                        font-size: 18px;
                         font-weight: 700;
-                        line-height: 53.22px;
+                        line-height: 28.17px;
                         color: $color_1;
                     }
                 }
@@ -1458,9 +1454,9 @@ svg{
         width: 80%;
         margin: 0 auto;
         margin-top: 5em;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 5em;
+        display: flex;
+        flex-direction:column ;
+        gap: 3em;
         margin-bottom: 5em;
         .Project{
             transition: all .8s cubic-bezier(0.23, 1, 0.320, 1);
