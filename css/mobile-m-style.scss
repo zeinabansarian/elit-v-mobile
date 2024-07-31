@@ -30,7 +30,7 @@ $color_main: #1d2f3b;
       margin-bottom: 40px;
       overflow: hidden;
       img {
-        width: 100%;
+        // width: 100%;
       }
       .topS {
         display: flex;
@@ -726,7 +726,7 @@ text-align: right;
       }
       img {
         height: 100svh;
-        // width: 100%;
+        width: 100%;
         scale: 1.1;
         transition: 1s ease;
         filter: brightness(0.65);
