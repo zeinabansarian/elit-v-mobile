@@ -9,6 +9,30 @@
     <link href="../css/mobile-f-style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="searchContainer">
+        <span class="CloseSerch">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.0846 10.1492L27.8521 7.91666L19.0013 16.7675L10.1505 7.91666L7.91797 10.1492L16.7688 19L7.91797 27.8508L10.1505 30.0833L19.0013 21.2325L27.8521 30.0833L30.0846 27.8508L21.2338 19L30.0846 10.1492Z" fill="#1D2F3B"/>
+            </svg>
+            
+        </span>
+        <div class="inputBox">
+            <form role="search" id="searchform" action="/search.bc" method="get" class="radius-xl">
+          <input type="search" name="q" id="search" placeholder="جستجو کنید">
+          <button type="submit" aria-label="search">
+          <span class="SearchIcon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.92 13.92L17 17M16.111 8.581C16.111 12.768 12.728 16.162 8.556 16.162C4.383 16.162 1 12.768 1 8.582C1 4.393 4.383 1 8.555 1C12.728 1 16.111 4.394 16.111 8.581Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </button>
+          </span>
+          </form>
+    
+      </div>
+      <div class="resultSearch">
+        <p>باعرض پوزش مطلبی پیدا نشد. واژه دیگری را جست و جو نمایید.</p>
+      </div>
+      </div>
     <header class="MobileHeader">
         <div class="Left">
           <div class="Items">
@@ -18,12 +42,11 @@
       
             </span>
             <span class="Item searchIcon">
-              <a href="" aria-label="link">
+    
                 <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.8875 22.2643C13.3389 22.266 15.7183 21.4352 17.6362 19.9079L24.226 26.5L26 24.7254L19.4102 18.1333C20.9382 16.2009 21.7654 13.8071 21.7566 11.3433C21.7478 8.87947 20.9035 6.49159 19.3618 4.5702C17.82 2.64882 15.6721 1.30767 13.2694 0.766129C10.8667 0.224589 8.35137 0.514715 6.1349 1.58905C3.91843 2.66338 2.13201 4.45833 1.06784 6.6803C0.00366785 8.90226 -0.275258 11.4197 0.276686 13.8209C0.82863 16.222 2.17877 18.3647 4.10627 19.8985C6.03376 21.4323 8.42451 22.2664 10.8875 22.2643ZM10.8875 3.01128C12.5425 3.01128 14.1603 3.50222 15.5365 4.42202C16.9126 5.34183 17.9851 6.64919 18.6185 8.17877C19.2518 9.70835 19.4175 11.3915 19.0946 13.0152C18.7718 14.639 17.9748 16.1306 16.8045 17.3013C15.6342 18.472 14.1432 19.2692 12.52 19.5922C10.8967 19.9152 9.21423 19.7494 7.68518 19.1159C6.15614 18.4823 4.84924 17.4094 3.92975 16.0328C3.01027 14.6562 2.5195 13.0378 2.5195 11.3822C2.5195 9.16207 3.40112 7.0329 4.97042 5.46305C6.53972 3.89321 8.66814 3.01128 10.8875 3.01128Z" fill="#1D2F3B"/>
                     </svg>
-                    
-              </a>
+          
             </span>
           </div>
         </div>

@@ -591,6 +591,7 @@ footer.MobileFooter{
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 10000;
     pointer-events: none;
     form{
         width: 100%;
@@ -613,7 +614,7 @@ footer.MobileFooter{
         pointer-events: all;
     }
     .resultSearch{
-        width: 20%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -661,14 +662,14 @@ footer.MobileFooter{
     -o-border-radius:10px ;
 }
     .searchContainer input::placeholder{
-        font-size: 14px;
-    font-weight: 300;
+        font-size: 13px;
+    font-weight: 400;
     
     line-height: 21.91px;
     color:$color_main;
     }
     .searchContainer .inputBox{
-        width: 60%;
+        width: 90%;
         display: flex;
         position: relative;
         justify-content: center;
