@@ -160,7 +160,7 @@ header.MobileHeader{
     padding-top: 1em;
     left: 0;
     grid-template-columns: repeat(2,1fr);
-    z-index: 5;
+    z-index: 999;
     &.color{
         a.linkM{
          color: $color_main !important; 
