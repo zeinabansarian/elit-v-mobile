@@ -1803,11 +1803,12 @@ svg{
         }
     } 
 }
-.searchh{
+.searchh-mobile{
     width: 100vw;
     display: flex;
     flex-direction: column;
     padding-top: 30vh;
+    overflow: hidden;
     .loaded{
          justify-content: center;
          align-items: center;
@@ -1882,7 +1883,7 @@ svg{
             width: 95%;
             display: flex;
             flex-direction: column;
-            margin-right: auto;
+            margin:0 auto;
             >.Title{
                 width: auto;
                 display: flex;
@@ -1900,24 +1901,50 @@ svg{
                 width: 100%;
                 position: relative;
                 display: flex;
-                overflow: hidden;
                 margin-top: 1.5em;
                 .swiper-blog,
                 .swiper-slide{
                     width: 100%;
                     display: flex;
-                    overflow: hidden;
+
                 }
             }
         
-    
+            .swiper-button-next,
+            .swiper-button-prev{
+                width: 55px;
+                z-index: 1;
+                right: 0;
+                top: 18%;
+                right: unset;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:$color_1 ;
+                transform:skew(5deg) rotate(4deg) ;
+                -webkit-transform:skew(5deg) rotate(4deg) ;
+                -moz-transform:skew(5deg) rotate(4deg) ;
+                -ms-transform:skew(5deg) rotate(4deg) ;
+                -o-transform:skew(5deg) rotate(4deg) ;
+                &::before,&::after
+    {
+                    content: none;
+                }
+                svg{
+                    width: 10px;
+                }
+            }
+            .swiper-button-prev{
+                left: unset;
+                left: 0;
+                transform:skew(-2deg) rotateY(-20deg);
+    }
         }
         .projects{
             width: 95%;
             margin-right: auto;
             display: flex;
             flex-direction: column;
-            margin-top: 5em;
             >.Title{
                 width: auto;
                 display: flex;

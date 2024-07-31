@@ -630,14 +630,16 @@ footer.MobileFooter{
     }
 }
 
-.searchh .searchContainer{
+.searchh-mobile .searchContainer{
   position: unset;
   opacity: 1;
   height: unset;
   z-index: 0;
   pointer-events: fill;
 }
-
+.searchh-mobile .inputBox{
+  width: 90% !important;
+}
 .searchContainer .CloseSerch{
     position: absolute;
     z-index: 100;
