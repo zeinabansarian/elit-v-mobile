@@ -851,13 +851,13 @@ $color_4:#000;
     }  
 }
 
-.BlogListC{
+.BlogListC-mobile{
     width: 100vw;
     overflow-x: hidden;
-    padding-top: 30vh;
+    padding-top: 15vh;
 
     .BlogList-Cotainer{
-        width: 65%;
+        width: 90%;
         padding-bottom: 5em;
         display: flex;
         flex-direction: column;
@@ -865,11 +865,12 @@ $color_4:#000;
    
         .BlogList{
             width: 100%;
-            display: grid;
-            gap: 10vh;
+            display: flex;
+            flex-direction: column;
+            gap:2.5em;
             margin: 1.8em 0;
             margin-bottom: 2.5em;
-            grid-template-columns: repeat(2,1fr);
+
         
         }
     }
