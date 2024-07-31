@@ -4,8 +4,8 @@ let swiperNews = new Swiper(".swiper-news", {
     slidesPerView:1,
     spaceBetween: 40
     ,  navigation: {
-        nextEl: ".Related-news .swiper-button-next",
-        prevEl: ".Related-news .swiper-button-prev",
+        nextEl: ".Related-Blogs .swiper-button-next",
+        prevEl: ".Related-Blogs .swiper-button-prev",
       },
   }); 
   
