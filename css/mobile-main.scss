@@ -9,33 +9,33 @@ $color_main: #1d2f3b;
 @font-face {
   font-family: "IRANSANSfa";
   font-style: normal;
-  src: url("../fonts/IRANSANS/IRANSANSfa.eot") format("eot"); /* IE9 Compat Modes */
-  src: url("../fonts/IRANSANS/IRANSANSfa.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb(FaNum)") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IRANSansWeb(FaNum)?#iefix")
       format("embedded-opentype"),
-    url("../fonts/IRANSANS/IRANSANSfa.woff2") format("woff2"),
-    url("../fonts/IRANSANS/IRANSANSfa.woff") format("woff"),
-    url("../fonts/IRANSANS/IRANSANSfa.ttf") format("truetype");
+    url("../_fonts/IRANSansWeb(FaNum).woff2") format("woff2"),
+    url("../_fonts/IRANSansWeb(FaNum).woff") format("woff"),
+    url("../_fonts/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSANS";
   font-style: normal;
-  src: url("../fonts/IRANSANS/IRANSansWeb.eot") format("eot"); /* IE9 Compat Modes */
-  src: url("../fonts/IRANSANS/IRANSansWeb.eot?#iefix")
+  src: url("../_fonts/IRANSANS/IRANSansWeb.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IRANSANS/IRANSansWeb.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/IRANSANS/IRANSansWeb.woff2") format("woff2"),
-    url("../fonts/IRANSANSfa.woff") format("woff"),
-    url("../fonts/IRANSANS/IRANSansWeb.ttf") format("truetype");
+    url("../_fonts/IRANSANS/IRANSansWeb.woff2") format("woff2"),
+    url("../_fonts/IRANSANSfa.woff") format("woff"),
+    url("../_fonts/IRANSANS/IRANSansWeb.ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSANS";
 
-  font-weight: 800;
-  src: url("../fonts/IranSans/eot/IRANSansWeb_Bold.eot") format("eot"); /* IE9 Compat Modes */
-  src: url("../fonts/IranSans/eot/IRANSansWeb_Bold.eot?#iefix")
+  font-weight: 700;
+  src: url("../_fonts/IRANSansWeb_Bold.eot") format("eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/IranSans/eot/IRANSansWeb_Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/IRANSANS/woff2/IRANSansWeb_Bold.woff2") format("woff2"),
-    url("../fonts/IRANSANSfa.woff") format("woff"),
-    url("../fonts/IranSans/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+    url("../_fonts/IRANSansWeb_Bold.woff2") format("woff2"),
+    url("../_fonts/IRANSansWeb_Bold.woff") format("woff"),
+    url("../_fonts/IRANSansWeb_Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "IRANSANS";
@@ -70,6 +70,7 @@ $color_main: #1d2f3b;
     url("../_fonts/IRANSansFaNum-Light.woff") format("woff"),
     url("../_fonts/IRANSansFaNum-Light.ttf") format("truetype");
 }
+
 * {
   font-family: "IRANSANS";
 }

@@ -1,0 +1,320 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="19" usedforid="[##cms.query.id##]">
+    <member name="project" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="19" usedforid="[##cms.query.id##]">
+   <member name="title" type="view" postsql="select * from [db.title] where TypeID=150"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="19" usedforid="[##cms.query.id##]"> 
+   <member name="projectGallery" type="list" format="4"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="19" usedforid="[##cms.query.id##]"> 
+   <member name="relatedProject" type="list" blgid="629" size="332x216" propertyid="91112"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##db.title.Answer##]</title>
+    <meta name="description" content="[##db.title.Answer##]">
+    <link href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="[##cms.cms.cdn##]/css/mobile-main.css" rel="stylesheet">
+    <link href="[##cms.cms.cdn##]/css/mobile-f-style.css" rel="stylesheet">
+</head>
+<body>
+    <basis core="call" file="header-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+    <main class="ProjectShowC-mobile">
+        <div class="Container">
+            <div class="Banner">
+                <basis core="print" datamembername="db.projectGallery">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="ord=51">
+                        <div class="IMG">
+                            <img src="@largeIMG" alt="[##db.title.Answer##]" title="[##db.title.Answer##]">
+                        </div>
+                    </face>
+                </basis>
+         
+                <div class="Title">
+                    <h1>[##db.title.Answer##]  </h1>
+                </div>
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                  </svg>
+            </div>
+            <div class="Gallery-Container">
+               <div class="Title">
+                <basis core="print" datamembername="db.project">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="TypeID=144"> 
+                        <h2>
+                            @Answer
+                        </h2> 
+                    </face>
+                </basis>
+               </div>
+               <div class="Gallerys">
+                <div class="swiper-gallery">
+                    <div class="swiper-wrapper">
+                        <basis core="print" datamembername="db.projectGallery">
+                            <layout>
+                                @child
+                            </layout>
+                            <face filter="ord=50">
+                                <div class="swiper-slide">
+                                    <div class="IMG">
+                                        <img src="@largeIMG" alt="[##db.title.Answer##]" title="[##db.title.Answer##]">
+                                    </div>
+                                    <div class="OV">
+                                        <span class="Btn openGallery">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28 4H10C9.47005 4.00158 8.96227 4.2128 8.58753 4.58753C8.2128 4.96227 8.00158 5.47005 8 6V20C8.00158 20.5299 8.2128 21.0377 8.58753 21.4125C8.96227 21.7872 9.47005 21.9984 10 22H28C28.5299 21.9984 29.0377 21.7872 29.4125 21.4125C29.7872 21.0377 29.9984 20.5299 30 20V6C29.9984 5.47005 29.7872 4.96227 29.4125 4.58753C29.0377 4.2128 28.5299 4.00158 28 4ZM28 20H10V6H28V20Z" fill="white"/>
+                                                <path d="M18 26H4V16H6V14H4C3.47005 14.0016 2.96227 14.2128 2.58753 14.5875C2.2128 14.9623 2.00158 15.4701 2 16V26C2.00158 26.5299 2.2128 27.0377 2.58753 27.4125C2.96227 27.7872 3.47005 27.9984 4 28H18C18.5299 27.9984 19.0377 27.7872 19.4125 27.4125C19.7872 27.0377 19.9984 26.5299 20 26V24H18V26Z" fill="white"/>
+                                                </svg>
+                                                
+                                        </span>
+                                    </div>
+                                </div>  
+                            </face>
+                        </basis>
+                      
+                 
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="25" height="25" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L1 11" stroke="white"/>
+                        </svg>
+                        
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="25" height="25" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1 6L6 11" stroke="white"/>
+                        </svg>
+                        
+                </div>
+               </div>
+         
+            </div>
+            <div class="Project-Detail">
+                <div class="right-col">
+                    <div class="Project-title">
+                        <basis core="print" datamembername="db.project">
+                            <layout>
+                                @child
+                            </layout>
+                            <face filter="TypeID=150">
+                                <div class="Row">
+                                    <span class="Question">
+                                        @Question:
+                                    </span>
+                                    <span class="Answer">
+                                          @Answer
+                                    </span>
+                                </div> 
+                            </face>
+                        </basis>
+                        <basis core="print" datamembername="db.project">
+                            <layout>
+                                @child
+                            </layout>
+                            <face filter="TypeID=144">
+                                <div class="Row">
+                                    <span class="Question">
+                                        @Question:
+                                    </span>
+                                    <span class="Answer">
+                                          @Answer
+                                    </span>
+                                </div> 
+                            </face>
+                        </basis>
+                    </div>
+                </div>
+                <div class="left-col">
+                    <basis core="print" datamembername="db.project">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="TypeID not in (150,144,159,160,161) ">
+                            <div class="Row">
+                                <span class="Question">
+                                    @Question:
+                                </span>
+                                <span class="Answer">
+                                      @Answer
+                                </span>
+                            </div> 
+                        </face>
+                    </basis>
+                </div>
+               </div>
+               <div class="Related-projects">
+                <div class="Title">
+                    <svg width="26" height="35" viewBox="0 0 26 35" fill="#305367" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 0V8.56771L0 16.224V10.026L26 0Z" fill="#5B7F95"/>
+                        <path d="M8.75 16.7708V23.5156L26 21.1458V12.9427L8.75 16.7708Z" fill="#5B7F95"/>
+                        <path d="M26 24.7917V35H0V28.0729L26 24.7917Z" fill="#5B7F95"/>
+                        </svg>
+                        
+                    <p>پروژه های مرتبط </p>
+                </div>
+                <div class="Projectlist">
+                    <div class="swiper-project">
+                        <div class="swiper-wrapper">
+                            <basis core="print" datamembername="db.relatedProject">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face>
+                                    <div class="swiper-slide">
+                                        <div class="Project">
+                                            <div class="IMG">
+                                              <a href="@link" alt="@title" title="@title">
+                                                <img src="@00332X00216prp" alt="@title" title="@title">
+                                            </a>
+                                                <div class="IMGoverlay">
+                                                  <div class="screen"></div>
+                                                </div>
+                                            </div>
+                                            <span class="Date">
+                                             @prp_91112
+                                            </span>
+                                            <div class="title">
+                                              <span>
+                                                <a href="@link" alt="@title" title="@title"
+                                                 data-hover="@title">
+                                                    <span>
+                                                        @title
+                                                    </span>
+                                                </a>
+                                              </span>
+                                          </div>
+                                            <div class="showMore">
+                                            <a href="@link" alt="@title" title="@title">
+                                            
+                                                <span class="rect">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                                
+                                                        <defs>
+                                                        </defs>
+                                                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                                            <path d="M 2 47 h 86 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 2 c -1.104 0 -2 0.896 -2 2 S 0.896 47 2 47 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                                            <path d="M 15.627 60.627 c 0.512 0 1.023 -0.195 1.414 -0.586 c 0.781 -0.781 0.781 -2.047 0 -2.828 L 4.828 45 l 12.213 -12.212 c 0.781 -0.781 0.781 -2.047 0 -2.828 c -0.781 -0.781 -2.047 -0.781 -2.828 0 L 0.586 43.586 C 0.211 43.961 0 44.47 0 45 s 0.211 1.039 0.586 1.414 l 13.627 13.627 C 14.604 60.432 15.115 60.627 15.627 60.627 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                                        </g>
+                                                        </svg>
+                                                  </span>
+                                              <span>
+                                                مشاهده 
+                                            </span>
+                                            </a>
+                                          </div>
+                                         </div>
+                                    </div>  
+                                </face>
+                            </basis>
+                         
+                      
+                        </div>
+                    </div>
+                  
+                   </div>
+            </div>
+        </div>
+        <basis core="call" file="footer-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <div class="popUpGalleryContainer" data-lenis-prevent="true">
+        <div class="fThumb">
+   
+          <div class="closePop">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="white"/>
+                  </svg>
+                  
+          </div>
+          <div class="thumbContainer">
+              <basis core="print" datamembername="db.projectGallery">
+                  <layout>
+                      @child
+                  </layout>
+                  <face filter="ord=50">
+                      <div class="thumbBox">
+                          <div class="imgS">
+                              <img src="@largeIMG" alt="[##db.title.Answer##]" title="[##db.title.Answer##]">
+                          </div>
+                
+                      </div>
+                  </face>
+              </basis>
+           
+    
+            
+          </div>
+   
+        </div>
+        <div class="sGallery">
+          <div class="closeSlider">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="white"/>
+                </svg>
+                
+        </div>
+          <div class="swiper popSlider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper innerGallery">
+              <!-- Slides -->
+                
+                              <div class="imgS ">
+                                  <img src="@largeIMG" class="innerIMG" alt="[##db.title.Answer##]" title="[##db.title.Answer##]">
+                            </div>
+                         
+             
+           
+   
+            </div>
+         
+          </div>
+          <div class="toolbarPop">
+            <div class="zoomIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 11C2.00016 9.56238 2.3447 8.14571 3.00479 6.86859C3.66489 5.59146 4.62132 4.49105 5.79402 3.65947C6.96672 2.82788 8.32158 2.28933 9.74516 2.08889C11.1687 1.88844 12.6196 2.03194 13.9764 2.50738C15.3331 2.98281 16.5562 3.77634 17.5433 4.82154C18.5304 5.86673 19.2527 7.13318 19.6498 8.51487C20.0469 9.89656 20.1073 11.3533 19.8258 12.7631C19.5443 14.1729 18.9292 15.4947 18.032 16.618L21.707 20.293C21.8892 20.4816 21.99 20.7342 21.9877 20.9964C21.9854 21.2586 21.8802 21.5094 21.6948 21.6948C21.5094 21.8802 21.2586 21.9854 20.9964 21.9877C20.7342 21.99 20.4816 21.8892 20.293 21.707L16.618 18.032C15.2939 19.09 13.6979 19.7526 12.0138 19.9435C10.3297 20.1344 8.62586 19.8459 7.0985 19.1112C5.57113 18.3764 4.28228 17.2253 3.38029 15.7904C2.47831 14.3554 1.99985 12.6949 2 11ZM11 7C11.2652 7 11.5196 7.10536 11.7071 7.2929C11.8946 7.48043 12 7.73479 12 8V10H14C14.2652 10 14.5196 10.1054 14.7071 10.2929C14.8946 10.4804 15 10.7348 15 11C15 11.2652 14.8946 11.5196 14.7071 11.7071C14.5196 11.8946 14.2652 12 14 12H12V14C12 14.2652 11.8946 14.5196 11.7071 14.7071C11.5196 14.8946 11.2652 15 11 15C10.7348 15 10.4804 14.8946 10.2929 14.7071C10.1054 14.5196 10 14.2652 10 14V12H8C7.73478 12 7.48043 11.8946 7.29289 11.7071C7.10536 11.5196 7 11.2652 7 11C7 10.7348 7.10536 10.4804 7.29289 10.2929C7.48043 10.1054 7.73478 10 8 10H10V8C10 7.73479 10.1054 7.48043 10.2929 7.2929C10.4804 7.10536 10.7348 7 11 7Z" fill="white"/>
+                </svg>
+                
+            </div>
+            <div class="zoomOut">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM7 10V12H15V10H7Z" fill="white"/>
+                </svg>
+                
+            </div>
+            <div class="rotateLeft">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.99812 9.59625L6.41187 7.99875C5.39937 9.30375 4.76937 10.8112 4.57812 12.375H6.85062C7.00812 11.3962 7.40187 10.44 7.99812 9.59625ZM6.85062 14.625H4.57812C4.76937 16.1888 5.38812 17.6962 6.40062 19.0012L7.98687 17.4037C7.40187 16.56 7.00812 15.615 6.85062 14.625ZM7.98687 20.61C9.29187 21.6225 10.8106 22.23 12.3744 22.4212V20.1375C11.3956 19.9688 10.4506 19.5863 9.60687 18.9788L7.98687 20.61ZM14.6244 4.57875V1.125L9.50562 6.24375L14.6244 11.25V6.85125C17.8194 7.39125 20.2494 10.1587 20.2494 13.5C20.2494 16.8413 17.8194 19.6087 14.6244 20.1488V22.4212C19.0681 21.87 22.4994 18.09 22.4994 13.5C22.4994 8.91 19.0681 5.13 14.6244 4.57875Z" fill="white"/>
+                </svg>
+                
+            </div>
+            <div class="rotateRight">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0019 9.59625L20.5881 7.99875C21.6006 9.30375 22.2306 10.8112 22.4219 12.375H20.1494C19.9919 11.3962 19.5981 10.44 19.0019 9.59625ZM20.1494 14.625H22.4219C22.2306 16.1888 21.6119 17.6962 20.5994 19.0012L19.0131 17.4037C19.5981 16.56 19.9919 15.615 20.1494 14.625ZM19.0131 20.61C17.7081 21.6225 16.1894 22.23 14.6256 22.4212V20.1375C15.6044 19.9688 16.5494 19.5863 17.3931 18.9788L19.0131 20.61ZM12.3756 4.57875V1.125L17.4944 6.24375L12.3756 11.25V6.85125C9.18063 7.39125 6.75063 10.1587 6.75063 13.5C6.75063 16.8413 9.18063 19.6087 12.3756 20.1488V22.4212C7.93188 21.87 4.50063 18.09 4.50063 13.5C4.50063 8.91 7.93188 5.13 12.3756 4.57875Z" fill="white"/>
+                </svg>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    <basis core="call" file="mobile-script.inc" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/projectMobile.js"></script>
+    <script type="application/ld+json"> 
+        [##json.fq.column1##] 
+        </script> 
+</body>
+</html>

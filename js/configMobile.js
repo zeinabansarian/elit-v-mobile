@@ -37,17 +37,3 @@ searchBTN.addEventListener('click',()=>{
 closeSearch.addEventListener('click',()=>{
   search.classList.remove('show')
 })
-// SEARCH
-let searchIcon = document.querySelector('.SearchIcon')
-searchIcon.addEventListener('click',()=>{
-  console.log('clicked');
-  let input = document.querySelector('.inputBox #search')
-  let Val = input.value
-  console.log('val',Val);
-//   var url = `/load.bc?q=${Val}&type=1`;
-//   $( ".resultSearch").load( url, function( response, status, xhr ) {
-//     // var responseAsObject = $.parseJSON(response);
-//     console.log(response);
-//     // }
-// })
-})
