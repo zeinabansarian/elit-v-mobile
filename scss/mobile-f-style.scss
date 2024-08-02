@@ -7,7 +7,7 @@ $color_4:#000;
 .NewsListC-mobile{
     width: 100vw;
     overflow-x: hidden;
-    padding-top: 15vh;
+    padding-top: 20vh;
     .newsList-Cotainer{
         width: 90%;
         display: flex;
@@ -57,7 +57,7 @@ $color_4:#000;
             &:last-child{
                 position: relative;
                 padding-bottom: 3em;
-                margin-bottom: 3em;
+                margin-bottom:1em;
                 &::after{
                     content: '';
                     position: absolute;
@@ -314,11 +314,12 @@ $color_4:#000;
 }
     }
     .Related-projects{
-        width: 100%;
-        margin-right: auto;
+        width: 95%;
         display: flex;
-        flex-direction: column;
-        margin-top: 5em;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5em;
+        margin-right: auto;
         >.Title{
             width: auto;
             display: flex;
@@ -855,10 +856,11 @@ $color_4:#000;
     width: 100vw;
     overflow-x: hidden;
     padding-top: 15vh;
-
+.MobileFooter{
+    border: none;
+}
     .BlogList-Cotainer{
         width: 90%;
-        padding-bottom: 5em;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -879,7 +881,7 @@ $color_4:#000;
 .ArticleShowC-mobile{
     width: 100vw;
     overflow-x: hidden;
-    padding-top: 25vh; 
+    padding-top: 15vh; 
     .Container{
         width: 100%;
         display: flex;
@@ -1022,8 +1024,7 @@ $color_4:#000;
             }
             &:last-child{
                 position: relative;
-                padding-bottom: 3em;
-                margin-bottom: 3em;
+                margin-bottom: 2em;
                 &::after{
                     content: '';
                     position: absolute;
@@ -1128,6 +1129,23 @@ $color_4:#000;
                     -moz-transition: opacity .5s ease-out;
                     -ms-transition: opacity .5s ease-out;
                     -o-transition: opacity .5s ease-out;
+                    &:nth-child(2){
+                        a{
+                            transform: translateY(2px);
+                            -webkit-transform: translateY(2px);
+                            -moz-transform: translateY(2px);
+                            -ms-transform: translateY(2px);
+                            -o-transform: translateY(2px);
+                        }
+                     
+}
+                    a{
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
                     svg,path{
                         fill: $color_1;
                     }
@@ -1218,7 +1236,7 @@ $color_4:#000;
         }
     }
     .Related-Blogs{
-        width: 95%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         margin:0 auto;
@@ -1290,9 +1308,9 @@ $color_4:#000;
             align-items: center;
             gap: .5em;
             p{
-             font-size: 24px;
-             font-weight: 700;
-             line-height: 37.57px;
+             font-size: 20px;
+             font-weight: 500;
+             line-height: 31.3px;
              color: $color_main;
             }
         }
@@ -1328,13 +1346,13 @@ $color_4:#000;
     }
     .Nav{
         position: absolute;
-        right: 2vh;
+        right: 1.5em;
         width: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
         bottom: 2vh;
-        gap: 1em;
+        gap: .5em;
         z-index: 3;
     }
     .swiper-button-prev{
@@ -1373,13 +1391,13 @@ $color_4:#000;
     .swiper-button-prev,
     .swiper-button-next{
         position: unset;
-        width: 40px;
+        width: 20px;
         transition: all .5s ease;
         -webkit-transition: all .5s ease;
         -moz-transition: all .5s ease;
         -ms-transition: all .5s ease;
         -o-transition: all .5s ease;
-        height: 40px;
+        height: 20px;
         background-color: transparent;
         border: 2px solid $color_1;
         display: flex;
@@ -1451,7 +1469,7 @@ svg{
         }
     }
     .Projectlist{
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         margin-top: 3em;
         display: flex;

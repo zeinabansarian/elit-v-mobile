@@ -532,6 +532,10 @@ footer.MobileFooter{
               display: flex;
               justify-content: center;
               align-items: center;
+              &:nth-child(4){
+                transform: translateY(2px);
+
+              }
             }
         }
     }

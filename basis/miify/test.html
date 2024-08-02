@@ -1,0 +1,163 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="5" usedforid="9627" >
+	<member type="view" name="contactus"/>
+</basis>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="css/mobile-r-style.css">
+ <link href="[##cms.cms.cdn##]/css/mobile-main.css" rel="stylesheet">
+</head>
+<body>
+<basis core="call" file="header-mobile.inc" />
+    <section class="contact1">
+    <h1 class="contact">ارتباط با ما</h1>  
+<div class="contactinfo">
+   
+ 
+<h2>  
+       
+<basis core="print" datamembername="db.contactus">
+<face filter="TypeID=244">
+ <span>نشانی:</span>
+    @answer
+</face>
+</basis>
+    </h2>
+
+
+
+ <h2>  
+    <span>تلفن:</span>
+  <basis core="print" datamembername="db.contactus">
+<face filter="TypeID=240">
+   <Strong class="faNam">  @answer </Strong>
+</face>      
+</basis>   
+ </h2>
+
+<h2>  
+     <span>اینستاگرام:</span>
+         <basis core="print" datamembername="db.contactus">
+<face filter="text='اینستاگرام'">
+    @largetext
+</face>
+</basis>             
+  </h2>
+               
+                <div class="number">
+ <p>  
+  <span>واتساپ:</span>
+  <basis core="print" datamembername="db.contactus">
+<face filter="text='واتس اپ'">
+  <strong class="faNam">  @largetext </strong>
+</face>
+</basis>           
+          </p>
+                   
+</div>
+ <h2>  
+    <span>تلگرام:</span>
+    <basis core="print" datamembername="db.contactus">
+<face filter="text='تلگرام'">
+ <strong class="faNam">   @largetext </strong>
+</face>
+</basis>              
+     </h2>
+
+
+
+
+                    
+ <h2>  
+     <span>سایت:</span>
+    <basis core="print" datamembername="db.contactus">
+<face filter="TypeID=243">
+    @answer
+</face>
+</basis>                        
+    </h2>
+
+<div class="qrcode">
+    <a href="https://www.instagram.com/elite.artgallery?igsh=ajg4cDBuNXBpdzl5&utm_source=qr">
+     <img src="images/qrcode1.jpg" alt="qrcode">
+    </a>
+<a href="https://www.instagram.com/dr.hosseinmahmoudi?igsh=MThqb3YycmxqdWR2cQ%3D%3D&utm_source=qr">
+     <img src="images/qrcode2.jpg" alt="qrcode">
+    </a>
+    </div>
+    
+
+</div>
+    </section>
+    <br>
+    <br>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.33680341344044!2d51.440708673694054!3d35.765823311175225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e05432be4dc43%3A0xfb2d9142b475162e!2z2LTYsdqp2Kog2YXZh9mG2K_Ys9uMINiy2K_ZiNmI2K8!5e0!3m2!1sfa!2s!4v1721756896706!5m2!1sfa!2s" 
+        width="350px" height="361px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </div>
+
+
+
+    <section class="contact2">
+
+    <h2>فرم ارسال پیام</h2>
+<p>لطفا پیام مورد نظر خود را برای ما ثبت و ارسال بفرمایید.</p>
+
+        <form action="#" class="homeForm3" onsubmit="return validateForm()" method="post">
+            <basis core="schema" run="atclient" 
+               schemaUrl="/schema/domainform/1DD4881E-238F-4BEA-AA03-75A9BA16C65E/18A283E9-AE11-47D1-9854-B4956FC07393/fa/فرم-تماس-با-ما" 
+           displayMode="new" button="[data-btn-add2]" resultSourceId="demo.data" onRendered="renderFn3"> 
+           </basis> 
+           
+           <basis core="callback" run="AtClient" triggers="demo.data" method="onSource2"></basis> 
+           <basis core="api" url="/schema/domainform/1DD4881E-238F-4BEA-AA03-75A9BA16C65E/fa/editobject" method="post" 
+           run="atclient" 
+           body="object_edit={##edit.object2.value##}&captcha={##edit.object2.captcha##}&captchaid={##edit.object2.captchaid##}" 
+           content-type="application/x-www-form-urlencoded" triggers="edit.object2" if="{##edit.object2|(false)##}" 
+           OnProcessed="OnProcessesEditObjectFn2"> 
+           </basis>
+           <basis core="dbsource" source="trust_login" run="atclient" name="captcha" triggers="refresh.captcha2">
+               <member type="scalar" request="captcha" name="code2" />
+               </basis>
+   
+                   <button type="submit" class="schemaBtn" data-btn-add2 data-btn-submit="" >ثبت</button>
+                   <div class="col">
+                   <basis core="print" datamembername="captcha.code2" run="atclient">
+                       <layout>
+                           @child
+                       </layout>
+                       <face>
+                     
+                           <script type="text/template">
+                              <div class="captchaBox">
+                                  <input type="hidden" name="captchaid" value="@captcha@" />
+                                    <!-- <input type="hidden" name="captcha" value="@captcha@" /> -->
+                                 <input type="text" class="codeinputm" name="captcha"
+                                 placeholder="عبارت امنیتی را وارد نمایید .." /> 
+                   
+                   
+                                  <img src="@captcha@" alt="captcha"  title="captcha" class="capcha"/>
+                                 <img src="/images/sync.png" class="refresh" alt="" bc-triggers="click" name="refresh.captcha2" bc-value="true"/>
+                               
+                            </div>
+                           </script>
+                       </face>
+                   </basis>
+                   </div>
+                       </form>
+
+    </section>
+
+    <script src="[##cms.cms.cdn##]/_js/basiscore-2.28.0.min.js"></script>
+
+ <basis core="call" file="footer-mobile.inc" />
+  <basis core="call" file="mobile-script.inc" />
+  <script src="[##cms.cms.cdn##]/js/contactMobile.js"></script>
+
+</body>
+</html>
